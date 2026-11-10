@@ -1562,7 +1562,7 @@
           return;
         }
         const guests = $("guests")?.value || "0", song = $("song")?.value.trim() || "";
-        const payload = { name, phone: phone || "Not provided", response: choice === "accept" ? "Joyfully Accept" : "Regretfully Decline", guest_count: choice === "accept" ? guests : "0", song_request: song || "None", event: "Taruna & Govind Wedding Celebrations — 24–26 November 2026", venue: "Shree Ganesh Celebration Marriage Garden, New Bypass, Ahead of Saini Chauraha, Bhopal, Madhya Pradesh", _subject: "New RSVP — Taruna & Govind Wedding", _template: "table", _captcha: "false" };
+        const payload = { name, phone: phone || "Not provided", response: choice === "accept" ? "Joyfully Accept" : "Regretfully Decline", guest_count: choice === "accept" ? guests : "0", song_request: song || "None", event: "Taruna & Govind Wedding Celebrations — 24–26 November 2026", venue: "Shree Ganesh Celebration Marriage Garden, New Bypass, Ahead of Saini Chauraha, Bhopal, Madhya Pradesh", _subject: "New RSVP — Taruna & Govind Wedding", _template: "table", _captcha: "false", _cc: "rakhikushwah17@gmail.com" };
         const submit = $("submitRsvp"); submit.disabled = true; submit.textContent = "Sending…";
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), 90000);
